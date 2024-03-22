@@ -1,8 +1,9 @@
 
 :root {
-    --first-color: #333D79FF;
-
+    --first-color: #00203F;
+    
     --second-color:  #FAEBEFFF;
+    --backup-color: #333D79FF;
 
 }
 
@@ -57,7 +58,7 @@ h2 {
 }
 
 #element-1 {
-    color: rgb(255, 141, 131);
+    color: rgb(255, 88, 73);
 }
 
 #element-2 {

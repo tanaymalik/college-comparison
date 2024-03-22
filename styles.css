@@ -1,35 +1,59 @@
 
 :root {
-    --first-color: #00203F;
+    --first-color: #333D79FF;
 
-    --second-color: #00203F;
+    --second-color:  #FAEBEFFF;
 
 }
 
 
-
+@font-face {
+    font-family: "kyiv-sans";
+    src: url("KyivTypeSans-Thin.ttf");
+  }
+  
+  @font-face {
+    font-family: "plus-jakarta-sans";
+    src: url("PlusJakartaSans-ExtraBold.ttf");
+  }
+  
+  @font-face {
+    font-family: "hamlin-bold";
+    src: url("Hamlin-Bold.ttf");
+  }
+  
 
 
 
 
 body {
-    background-color: #00203F;
+    background-color: var(--first-color);
     height: 100%;
+    font-family: 'plus-jakarta-sans';
     
 }
 
 p {
     font-size: 1.2rem;
-        text-align: center;
-        color: #ffffff;
+        text-align: left;
+        color: var(--second-color);
        padding: 20px;
        margin: 0 auto;
+       font-family: 'plus-jakarta-sans';
 }
 
 h1 , h2{
     margin-top: 50px;
     text-align: center;
-    color: #ffffff;
+    color: var(--second-color);
+}
+
+
+h2 {
+  
+    
+    font-size: 32px;
+
 }
 
 #element-1 {
@@ -43,19 +67,19 @@ h1 , h2{
 
 .logos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
 
 #main-div {
-    padding: 20px;
+    padding: 25px 20px 25px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2em;
+    gap: 1.3em;
     align-items:center;
-    background-color: #ffffff;
+    background-color: var(--second-color);
 
     min-height: 200px;
     max-height: 250px;
@@ -66,8 +90,8 @@ h1 , h2{
 
 #main-div > div {
     flex: 1;
-   
-    background: #00203F;
+   padding: 10px;
+    background: var(--first-color);
     min-height: 100px;
     text-align: center;
     border-radius: 30px;
@@ -88,20 +112,45 @@ h1 , h2{
 .yale {
     color: #AD8B3A;
 }
+table {
+    margin: 100px;
+    padding: 30px;
+    border-radius: 40px;
+   
+    background-color: var(--second-color);
+}
 
+.comparison-table th,
+.comparison-table td {
+    padding: 32px;
+    width: 300px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+}
 
+.comparison-table th {
+    background-color: var(--second-color);
+    font-weight: bold;
+}
 
+.comparison-table td:first-child {
+    font-weight: bold;
+}
 
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 450px) {
+    table {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+   
+    .comparison-table th,
+    .comparison-table td {
+        padding: 10px;
+        width: 10px;
+        text-align: left;
+        border-bottom: 1px solid #000000;
+    }
+}
 
 
 @media screen and (min-width: 800px) {
@@ -130,7 +179,7 @@ h1 , h2{
        width: 100vh;
     }
     p {
-        text-align: center;
+
         max-width: 60%;
     }
 

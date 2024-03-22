@@ -1,0 +1,145 @@
+
+:root {
+    --first-color: #00203F;
+
+    --second-color: #00203F;
+
+}
+
+
+
+
+
+
+
+body {
+    background-color: #00203F;
+    height: 100%;
+    
+}
+
+p {
+    font-size: 1.2rem;
+        text-align: center;
+        color: #ffffff;
+       padding: 20px;
+       margin: 0 auto;
+}
+
+h1 , h2{
+    margin-top: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#element-1 {
+    color: rgb(255, 141, 131);
+}
+
+#element-2 {
+    color: #AD8B3A;
+}
+
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+#main-div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    align-items:center;
+    background-color: #ffffff;
+
+    min-height: 200px;
+    max-height: 250px;
+    max-width: 1100px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+#main-div > div {
+    flex: 1;
+   
+    background: #00203F;
+    min-height: 100px;
+    text-align: center;
+    border-radius: 30px;
+    min-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+
+.logo {
+    max-height: 100px;
+    max-width: 400px;
+}
+
+.yale {
+    color: #AD8B3A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 800px) {
+    #main-div {
+        flex-direction: row;
+        min-width: 60%;
+        align-self: center;
+    }
+
+    #main-div > div {
+        flex: 1;
+        flex-wrap: wrap;
+        min-height: 170px;
+        min-width: 40%;
+        font-size: 40px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .logos {
+       width: 100vh;
+    }
+    p {
+        text-align: center;
+        max-width: 60%;
+    }
+
+
+}
+
+
+
+
+
+
+
